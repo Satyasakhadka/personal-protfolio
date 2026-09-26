@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Satyasa Khadka — AI & Computer Vision Engineer</title>
-  <meta name="description" content="Satyasa Khadka — Computer Engineering graduate from Pulchowk Campus, Kathmandu. Working in AI, Computer Vision, and NLP." />
+  <title>Satyasa Khadka</title>
+  <meta name="description" content="Satyasa Khadka, Computer Engineering graduate from Pulchowk Campus, Kathmandu. Working in AI, Computer Vision and NLP." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -15,7 +15,7 @@
   <!-- NAV -->
   <header class="site-header" id="site-header">
     <nav class="nav-inner">
-      <a href="#hero" class="nav-logo">SK<span class="cursor-blink">_</span></a>
+      <a href="#hero" class="nav-logo">SK</a>
       <ul class="nav-links">
         <li><a href="#about" class="nav-link">About</a></li>
         <li><a href="#experience" class="nav-link">Experience</a></li>
@@ -23,9 +23,22 @@
         <li><a href="#skills" class="nav-link">Skills</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
-      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="nav-controls">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+          </svg>
+        </button>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </nav>
     <div class="mobile-menu" id="mobile-menu">
       <ul>
@@ -42,33 +55,46 @@
 
     <!-- HERO -->
     <section class="hero" id="hero">
-      <div class="hero-grid-bg" aria-hidden="true"></div>
       <div class="hero-content">
-        <p class="hero-eyebrow">Hello, I'm</p>
-        <h1 class="hero-name">Satyasa<br>Khadka</h1>
-        <p class="hero-tagline">Computer Engineer · AI &amp; Computer Vision · Kathmandu, Nepal</p>
-        <div class="hero-sub">
-          <p>Building systems that see, understand, and communicate — from Nepali license plate recognition to NLP tools for low-resource languages.</p>
+
+        <div class="hero-text">
+          <p class="hero-eyebrow">Hello, I'm</p>
+          <h1 class="hero-name">Satyasa Khadka</h1>
+          <p class="hero-tagline">Computer Engineer&nbsp;|&nbsp;ML Practitioner&nbsp;|&nbsp;NLP Researcher</p>
+          <p class="hero-sub">Computer engineering graduate focused on computer vision and NLP, with hands-on work in low-resource language modeling and script recognition.</p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn-primary">Get in touch</a>
+            <a href="#projects" class="btn-ghost">See my work</a>
+          </div>
+          <div class="hero-social">
+            <a href="https://linkedin.com/in/satyasa-khadka" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/Satyasakhadka" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+              <span>GitHub</span>
+            </a>
+            <a href="mailto:khadkasatyasha@gmail.com" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>Email</span>
+            </a>
+          </div>
         </div>
-        <div class="hero-actions">
-          <a href="#contact" class="btn-primary">Get in touch</a>
-          <a href="#projects" class="btn-ghost">See my work</a>
+
+        <div class="hero-photo-wrap">
+          <div class="hero-photo-offset" aria-hidden="true"></div>
+          <div class="hero-photo" id="hero-photo">
+            <img src="assets/profile.jpg" alt="Satyasa Khadka" id="profile-img">
+            <div class="photo-fallback" id="photo-fallback">SK</div>
+          </div>
         </div>
-        <div class="hero-social">
-          <a href="https://linkedin.com/in/satyasa-khadka" target="_blank" rel="noopener" aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-          </a>
-          <a href="https://github.com/satyasa-khadka" target="_blank" rel="noopener" aria-label="GitHub">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
-          </a>
-          <a href="mailto:077bct078.satyasa@pcampus.edu.np" aria-label="Email">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          </a>
-        </div>
+
       </div>
+
       <div class="hero-scroll-hint" aria-hidden="true">
-        <span>scroll</span>
         <div class="scroll-line"></div>
+        <span>scroll</span>
       </div>
     </section>
 
@@ -78,37 +104,8 @@
         <div class="about-grid">
           <div class="about-text">
             <h2 class="section-title">About</h2>
-            <p>I'm a Computer Engineering graduate from <strong>Pulchowk Campus, IOE, Tribhuvan University</strong> — Nepal's top engineering school — where I completed my degree with an 84% aggregate, holding a government merit scholarship for securing 43rd rank among 15,000 applicants.</p>
-            <p>My work sits at the intersection of computer vision, NLP, and machine learning. I'm particularly drawn to building AI systems for low-resource languages and contexts — making technology that actually works for Nepali users and their real-world needs.</p>
-            <p>When I'm not training models, I'm usually travelling to somewhere new or capturing it through photography.</p>
-            <div class="about-meta">
-              <div class="meta-item">
-                <span class="meta-label">Location</span>
-                <span class="meta-value">Kathmandu, Nepal</span>
-              </div>
-              <div class="meta-item">
-                <span class="meta-label">Contact</span>
-                <span class="meta-value">+977-9840066727</span>
-              </div>
-              <div class="meta-item">
-                <span class="meta-label">Interests</span>
-                <span class="meta-value">NLP · Computer Vision · ML · Photography</span>
-              </div>
-            </div>
-          </div>
-          <div class="about-highlights">
-            <div class="highlight-card">
-              <div class="highlight-number">43<span>rd</span></div>
-              <p>Rank out of 15,000 applicants — government merit scholarship</p>
-            </div>
-            <div class="highlight-card">
-              <div class="highlight-number">84<span>%</span></div>
-              <p>Aggregate in undergraduate Computer Engineering</p>
-            </div>
-            <div class="highlight-card">
-              <div class="highlight-number">1<span>st</span></div>
-              <p>Author on Nepali License Plate Recognition paper at ISBM 2025</p>
-            </div>
+            <p>Computer Engineering graduate from <strong>Pulchowk Campus, IOE, Tribhuvan University</strong>. Graduated with an 84% aggregate on a government merit scholarship, ranked 43rd out of 15,000 entrance applicants.</p>
+            <p>My interests are in computer vision and NLP for low-resource languages and scripts. Currently working as a Software Engineer at DFW IT Partner while staying active in research.</p>
           </div>
         </div>
       </div>
@@ -119,31 +116,29 @@
       <div class="section-inner">
         <h2 class="section-title">Education</h2>
         <div class="timeline">
+
           <div class="timeline-item">
-            <div class="timeline-year">2021–2025</div>
+            <div class="timeline-meta">
+              <span class="timeline-year">2021–2025</span>
+            </div>
             <div class="timeline-body">
               <h3>BE, Computer Engineering</h3>
               <p class="timeline-inst">Pulchowk Campus, IOE, Tribhuvan University</p>
               <p class="timeline-detail">Aggregate 84% · Government Merit Scholarship · Ranked 43rd / 15,000</p>
-              <p class="timeline-courses">Coursework in AI, Applied Data Science, DSA, Software Engineering, Probability & Statistics, Computer Architecture</p>
             </div>
           </div>
+
           <div class="timeline-item">
-            <div class="timeline-year">2018–2021</div>
+            <div class="timeline-meta">
+              <span class="timeline-year">2018–2021</span>
+            </div>
             <div class="timeline-body">
-              <h3>High School — Mathematics Group</h3>
+              <h3>High School, Mathematics</h3>
               <p class="timeline-inst">Golden Gate International College</p>
-              <p class="timeline-detail">CGPA 3.85 · Class Representative</p>
+              <p class="timeline-detail">CGPA 3.85</p>
             </div>
           </div>
-          <div class="timeline-item">
-            <div class="timeline-year">Up to 2018</div>
-            <div class="timeline-body">
-              <h3>Secondary Education</h3>
-              <p class="timeline-inst">Bhanubhakta Memorial School</p>
-              <p class="timeline-detail">GPA 3.85 in SEE Examination</p>
-            </div>
-          </div>
+
         </div>
       </div>
     </section>
@@ -151,18 +146,29 @@
     <!-- EXPERIENCE -->
     <section class="section exp-section" id="experience">
       <div class="section-inner">
-        <h2 class="section-title">Experience &amp; Leadership</h2>
+        <h2 class="section-title">Experience</h2>
         <div class="exp-list">
+
+          <div class="exp-item exp-current">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-role">Software Engineer <span class="exp-badge">Current</span></h3>
+                <p class="exp-org">DFW IT Partner, Nepal</p>
+              </div>
+              <span class="exp-date">Apr 2025 – Present</span>
+            </div>
+            <p class="exp-desc">Building and customizing ERP modules for clients using the Odoo framework, covering full-stack development and client-specific business workflows.</p>
+          </div>
 
           <div class="exp-item">
             <div class="exp-header">
               <div>
                 <h3 class="exp-role">Executive Committee Member</h3>
-                <p class="exp-org">LOCUS 2025 — Nepal's Largest Tech Fest</p>
+                <p class="exp-org">LOCUS 2025, Nepal's Largest Tech Fest</p>
               </div>
               <span class="exp-date">Jun 2024 – Mar 2025</span>
             </div>
-            <p class="exp-desc">Served as a core team member of LOCUS 2025. Mentored participants of the Software Fellowship in AI, ML, and Data Science. Organized "Girls to Code" — a two-day event introducing AI/ML to aspiring female technologists.</p>
+            <p class="exp-desc">Core team member of LOCUS 2025. Mentored participants in AI, ML, and Data Science through the Software Fellowship. Organized "Girls to Code", a two-day event introducing AI and ML to aspiring female technologists.</p>
           </div>
 
           <div class="exp-item">
@@ -173,7 +179,7 @@
               </div>
               <span class="exp-date">Sep 2024</span>
             </div>
-            <p class="exp-desc">Led a team of five across districts in Nepal, educating students on internet safety, cyber threats, and responsible digital citizenship through interactive sessions.</p>
+            <p class="exp-desc">Led a team of five across multiple districts in Nepal, running sessions for students on internet safety, cyber threats, and safe online practices.</p>
           </div>
 
           <div class="exp-item">
@@ -184,33 +190,33 @@
               </div>
               <span class="exp-date">Oct 2023 – Feb 2024</span>
             </div>
-            <p class="exp-desc">Hosted the Hult Prize event, facilitating discussions and ensuring an engaging experience for participants and speakers.</p>
+            <p class="exp-desc">Hosted the Hult Prize on-campus event, facilitating panel discussions and introducing speakers.</p>
           </div>
 
         </div>
 
         <h3 class="subsection-title">Competitions &amp; Awards</h3>
         <div class="awards-grid">
-          <div class="award-card">
-            <div class="award-icon">🏆</div>
-            <h4>Hult Prize — Runner Up</h4>
-            <p>IOE Pulchowk Campus · Feb 2024</p>
-            <p class="award-detail">HackEye: computer vision system for locating missing persons via facial recognition</p>
-          </div>
-          <div class="award-card">
-            <div class="award-icon">🎖️</div>
-            <h4>Shequal Hackathon — Finalist</h4>
-            <p>Nepal's Largest All-Female Hackathon · Jul–Aug 2023</p>
-            <p class="award-detail">Personalized learning app for children with autism</p>
-          </div>
-          <div class="award-card">
-            <div class="award-icon">🥇</div>
-            <h4>Hack-A-Week — Finalist</h4>
-            <p>LOCUS · Jan 2023</p>
-            <p class="award-detail">"Firantey" — social media app for tourism promotion of unexplored places in Nepal</p>
-          </div>
-        </div>
 
+          <div class="award-card">
+            <p class="award-event">IOE Pulchowk Campus · Dec 2025</p>
+            <h4>Best Project</h4>
+            <p class="award-detail">Best project award for Handwritten Devanagari Character Recognition at IOE Pulchowk Campus (BELEX2052 batch)</p>
+          </div>
+
+          <div class="award-card">
+            <p class="award-event">Hult Prize at IOE · Feb 2024</p>
+            <h4>Runner-Up</h4>
+            <p class="award-detail">HackEye, a computer vision system for locating missing persons using facial recognition</p>
+          </div>
+
+          <div class="award-card">
+            <p class="award-event">Shequal All-Female Hackathon · Jul–Aug 2023</p>
+            <h4>Finalist</h4>
+            <p class="award-detail">Built a personalized learning app for children with autism at Nepal's largest all-female hackathon</p>
+          </div>
+
+        </div>
       </div>
     </section>
 
@@ -221,64 +227,57 @@
         <div class="projects-grid">
 
           <article class="project-card project-featured">
-            <div class="proj-tag">Computer Vision · NLP</div>
-            <h3>Nepali License Plate Recognition</h3>
-            <p>AI-based system using YOLOv8 for plate extraction and a custom CNN (TensorFlow/Keras) for character recognition — specifically optimized for Nepali fonts, plate variations, and diverse lighting conditions. Presented as first author at ISBM Conference 2025.</p>
-            <div class="proj-tech">
-              <span>YOLOv8</span><span>TensorFlow</span><span>Keras</span><span>Computer Vision</span>
+            <div class="proj-header-row">
+              <div class="proj-tag">Computer Vision · Deep Learning · Dataset</div>
+              <span class="proj-num">01</span>
             </div>
-            <a href="#" class="proj-link">GitHub ↗</a>
+            <h3>Handwritten Devanagari Character Recognition: Conjunct Consonants Dataset Creation and Benchmarking with Transfer Learning</h3>
+            <p>Collected and published <strong>HDCoCo</strong>, a dataset of 50,020 handwritten Devanagari conjunct consonant samples largely absent from existing OCR datasets. Benchmarked recognition models using transfer learning. Published on Springer; dataset on IEEE Dataport.</p>
+            <div class="proj-tech">
+              <span>Computer Vision</span><span>Transfer Learning</span><span>OCR</span><span>Devanagari Script</span><span>Dataset Collection</span>
+            </div>
+            <a href="https://github.com/Satyasakhadka/Handwritten-Devanagari-Conjunct-Consonant-Characters" target="_blank" rel="noopener" class="proj-link">View on GitHub ↗</a>
+          </article>
+
+          <article class="project-card project-featured">
+            <div class="proj-header-row">
+              <div class="proj-tag">Computer Vision · Deep Learning</div>
+              <span class="proj-num">02</span>
+            </div>
+            <h3>Nepali License Plate Recognition</h3>
+            <p>Used YOLOv8 for plate detection and a custom CNN for character recognition, optimized for Nepali fonts, local plate variations, and different lighting conditions. Presented as first author at ISBM Conference 2025.</p>
+            <div class="proj-tech">
+              <span>YOLOv8</span><span>TensorFlow</span><span>Keras</span><span>OpenCV</span>
+            </div>
+            <a href="https://github.com/Satyasakhadka/Nepali-NumberPlate-Character-Recognition" target="_blank" rel="noopener" class="proj-link">View on GitHub ↗</a>
           </article>
 
           <article class="project-card">
-            <div class="proj-tag">NLP</div>
+            <div class="proj-header-row">
+              <div class="proj-tag">NLP</div>
+              <span class="proj-num">03</span>
+            </div>
             <h3>Nepali Language Auto-Completion</h3>
-            <p>LSTM-based auto-completion tool for Nepali text. Refines language modeling for a low-resource language and integrates into an intuitive typing interface.</p>
+            <p>LSTM-based auto-completion model for Nepali text, addressing language modeling for a low-resource language and integrated into a typing interface.</p>
             <div class="proj-tech">
               <span>LSTM</span><span>Python</span><span>NLP</span>
             </div>
-            <a href="#" class="proj-link">GitHub ↗</a>
+            <a href="https://github.com/Satyasakhadka/nepali-auto-completion-tool" target="_blank" rel="noopener" class="proj-link">View on GitHub ↗</a>
           </article>
 
           <article class="project-card">
-            <div class="proj-tag">Machine Learning</div>
-            <h3>SVM from Scratch</h3>
-            <p>Educational implementation of Support Vector Machines using only NumPy on the Iris dataset — a beginner-friendly deep dive into SVM mathematics and optimization.</p>
-            <div class="proj-tech">
-              <span>Python</span><span>NumPy</span><span>SVM</span>
+            <div class="proj-header-row">
+              <div class="proj-tag">Web · Visualization</div>
+              <span class="proj-num">04</span>
             </div>
-            <a href="#" class="proj-link">GitHub ↗</a>
-          </article>
-
-          <article class="project-card">
-            <div class="proj-tag">Deep Learning · Healthcare</div>
-            <h3>ISIC Skin Cancer Classification</h3>
-            <p>Transfer learning on ResNet-18 for skin lesion classification using the ISIC dataset. Fine-tuned for high accuracy in medical image identification across multiple lesion types.</p>
-            <div class="proj-tech">
-              <span>ResNet-18</span><span>PyTorch</span><span>Transfer Learning</span>
-            </div>
-            <a href="#" class="proj-link">GitHub ↗</a>
-          </article>
-
-          <article class="project-card">
-            <div class="proj-tag">Web · Visualization</div>
             <h3>Sorting Algorithm Visualizer</h3>
-            <p>Interactive web app for visualizing Bubble, Selection, Insertion, Merge, and Quick Sort — users shuffle bars and watch algorithms sort them in real time.</p>
+            <p>Interactive web app for visualizing sorting algorithms in real time. Supports Bubble, Selection, Insertion, Merge, and Quick Sort.</p>
             <div class="proj-tech">
               <span>JavaScript</span><span>HTML/CSS</span>
             </div>
-            <a href="#" class="proj-link">GitHub ↗</a>
+            <a href="https://github.com/Satyasakhadka/Sorting-visualizer" target="_blank" rel="noopener" class="proj-link">View on GitHub ↗</a>
           </article>
 
-          <article class="project-card">
-            <div class="proj-tag">Game Dev · C++</div>
-            <h3>Pac-Man with SFML</h3>
-            <p>Classic Pac-Man implemented in C++ using SFML — smooth animations, collision detection, enemy AI, and an interactive UI showcasing systems-level game development.</p>
-            <div class="proj-tech">
-              <span>C++</span><span>SFML</span>
-            </div>
-            <a href="#" class="proj-link">GitHub ↗</a>
-          </article>
 
         </div>
       </div>
@@ -288,58 +287,55 @@
     <section class="section skills-section" id="skills">
       <div class="section-inner">
         <h2 class="section-title">Skills &amp; Certifications</h2>
-        <div class="skills-grid">
+        <div class="skills-wrap">
           <div class="skill-group">
-            <h3>Languages</h3>
+            <h3 class="skill-group-label">Languages</h3>
             <div class="skill-tags">
-              <span>Python</span><span>C</span><span>C++</span><span>JavaScript</span><span>PROLOG</span>
+              <span>Python</span><span>C</span><span>C++</span><span>JavaScript</span>
             </div>
           </div>
           <div class="skill-group">
-            <h3>Libraries &amp; Frameworks</h3>
+            <h3 class="skill-group-label">Libraries &amp; Frameworks</h3>
             <div class="skill-tags">
               <span>PyTorch</span><span>TensorFlow</span><span>OpenCV</span><span>Pandas</span><span>NumPy</span><span>Keras</span>
             </div>
           </div>
           <div class="skill-group">
-            <h3>Areas of Focus</h3>
+            <h3 class="skill-group-label">Areas of Focus</h3>
             <div class="skill-tags">
               <span>Computer Vision</span><span>NLP</span><span>Machine Learning</span><span>Deep Learning</span><span>Transfer Learning</span>
             </div>
           </div>
           <div class="skill-group">
-            <h3>Tools</h3>
+            <h3 class="skill-group-label">Tools &amp; Platforms</h3>
             <div class="skill-tags">
-              <span>Git</span><span>GitHub</span><span>MacOS</span><span>Linux</span>
+              <span>Git</span><span>GitHub</span><span>Linux</span>
             </div>
           </div>
         </div>
 
         <div class="certs">
-          <h3>Certifications &amp; Courses</h3>
-          <ul class="cert-list">
-            <li>
-              <span class="cert-dot"></span>
-              <div>
+          <h3 class="certs-title">Certifications &amp; Courses</h3>
+          <div class="cert-list">
+            <div class="cert-item">
+              <div class="cert-inner">
                 <strong>5th Annual Nepal AI School</strong>
                 <span>NAAMII · 2024–25</span>
               </div>
-            </li>
-            <li>
-              <span class="cert-dot"></span>
-              <div>
-                <strong>Advanced Data Science &amp; AI</strong>
+            </div>
+            <div class="cert-item">
+              <div class="cert-inner">
+                <strong>Advanced Data Science &amp; Artificial Intelligence</strong>
                 <span>Samsung Innovation Campus</span>
               </div>
-            </li>
-            <li>
-              <span class="cert-dot"></span>
-              <div>
+            </div>
+            <div class="cert-item">
+              <div class="cert-inner">
                 <strong>Supervised Machine Learning: Regression &amp; Classification</strong>
                 <span>Coursera</span>
               </div>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -348,49 +344,83 @@
     <section class="section pub-section" id="publications">
       <div class="section-inner">
         <h2 class="section-title">Publication</h2>
-        <div class="pub-card">
-          <div class="pub-badge">ISBM Conference 2025</div>
-          <h3>"Character Recognition of Nepali Number Plates"</h3>
-          <p class="pub-authors">Satyasa Khadka, et al.</p>
-          <p class="pub-desc">Presented as first author at ISBM Conference 2025, Kathmandu. Research on Nepali license plate character recognition using CNN-based models, optimized for Nepali fonts and plate variations.</p>
+        <div class="pub-list">
+
+          <div class="pub-card">
+            <div class="pub-venue">ISBM Conference 2025 · Kathmandu, Nepal · Springer</div>
+            <h3>"Character Recognition of Nepali Number Plates"</h3>
+            <p class="pub-authors">Satyasa Khadka, et al.</p>
+            <p class="pub-desc">Presented as first author. CNN-based character recognition for Nepali license plates, optimized for local fonts and plate variations.</p>
+            <a href="https://link.springer.com/chapter/10.1007/978-3-032-12996-3_21" target="_blank" rel="noopener" class="pub-link">View on Springer ↗</a>
+          </div>
+
+          <div class="pub-card">
+            <div class="pub-venue">Springer</div>
+            <h3>"Handwritten Devanagari Character Recognition: Conjunct Consonants Dataset Creation and Benchmarking with Transfer Learning"</h3>
+            <p class="pub-authors">Satyasa Khadka, et al.</p>
+            <p class="pub-desc">Research on handwritten Devanagari conjunct consonant recognition, covering the HDCoCo dataset creation and model benchmarking with transfer learning.</p>
+            <a href="https://link.springer.com/chapter/10.1007/978-3-032-36207-0_23" target="_blank" rel="noopener" class="pub-link">View on Springer ↗</a>
+          </div>
+
+          <div class="pub-card">
+            <div class="pub-venue">IEEE Dataport · Dataset</div>
+            <h3>HDCoCo: Handwritten Devanagari Conjunct Consonants Dataset</h3>
+            <p class="pub-authors">Satyasa Khadka, et al.</p>
+            <p class="pub-desc">50,020 handwritten samples of Devanagari conjunct consonants, a script combination largely absent from existing OCR datasets. Published on IEEE Dataport.</p>
+            <a href="https://ieee-dataport.org/documents/handwritten-devanagari-conjunct-consonants-hdcoco-dataset" target="_blank" rel="noopener" class="pub-link">View on IEEE Dataport ↗</a>
+          </div>
+
         </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section gallery-section" id="gallery">
+      <div class="section-inner">
+        <h2 class="section-title">In Frame</h2>
+        <p class="gallery-sub">Events, people, and moments along the way.</p>
+        <div class="slider-container">
+          <div class="slider-wrap" id="slider-wrap">
+            <div class="slider-track" id="slider-track"></div>
+            <button class="slider-btn slider-prev" id="slider-prev" aria-label="Previous photo">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <button class="slider-btn slider-next" id="slider-next" aria-label="Next photo">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+          <div class="slider-dots" id="slider-dots"></div>
+        </div>
+        <p class="gallery-empty" id="gallery-empty" hidden>Add photos to <code>assets/Gallery/</code> and list them in <code>script.js</code>.</p>
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section class="section contact-section" id="contact">
-      <div class="section-inner contact-inner">
-        <div class="contact-text">
-          <h2 class="section-title">Let's talk</h2>
-          <p>Whether it's a collaboration, a question, or just a hello — I'd love to hear from you.</p>
-          <div class="contact-links">
-            <a href="mailto:077bct078.satyasa@pcampus.edu.np" class="contact-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              077bct078.satyasa@pcampus.edu.np
-            </a>
-            <a href="tel:+9779840066727" class="contact-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81 19.79 19.79 0 01.07 2.14 2 2 0 012.05 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.08 6.08l.38-.38a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-              +977-9840066727
-            </a>
-            <a href="https://linkedin.com/in/satyasa-khadka" target="_blank" rel="noopener" class="contact-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-              Satyasa Khadka on LinkedIn
-            </a>
-            <a href="https://github.com/satyasa-khadka" target="_blank" rel="noopener" class="contact-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
-              GitHub — Satyasa Khadka
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
   </main>
 
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <span>Satyasa Khadka · Kathmandu, Nepal</span>
-      <span>Built with care · 2025</span>
+  <footer class="site-footer" id="contact">
+    <div class="footer-top">
+      <div class="footer-email">
+        <span class="footer-label">Email</span>
+        <a href="mailto:khadkasatyasha@gmail.com">khadkasatyasha@gmail.com</a>
+      </div>
+      <div class="footer-right">
+        <span class="footer-label">Let's connect</span>
+        <div class="footer-icons">
+          <a href="mailto:khadkasatyasha@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/satyasa-khadka" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://github.com/Satyasakhadka" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Satyasa Khadka · Kathmandu, Nepal</span>
     </div>
   </footer>
 
